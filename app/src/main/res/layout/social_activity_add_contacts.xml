@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.Base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".social.view.AddContactsActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <rohin.pers.rohinchat.common.design.widget.ClearEditText
+        android:id="@+id/cet_toolbar_add_contacts_input"
+        style="@style/ClearEditText.Base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/toolbar_add_contacts_cet_drawable_search"
+        android:drawablePadding="@dimen/social_add_contacts_cet_input_drawable_padding"
+        android:hint="@string/hint_add_contacts"
+        android:paddingBottom="@dimen/social_add_contacts_cet_input_padding_8"
+        android:paddingEnd="@dimen/social_add_contacts_cet_input_padding_16"
+        android:paddingStart="@dimen/social_add_contacts_cet_input_padding_16"
+        android:paddingTop="@dimen/social_add_contacts_cet_input_padding_8" />
+
+    <TextView
+        android:id="@+id/tv_toolbar_add_contacts_my_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/social_add_contacts_tv_my_qrCode_margin"
+        android:drawableEnd="@drawable/main_setting_my_qrcode"
+        android:drawablePadding="@dimen/social_add_contacts_tv_my_qrCode_drawable_padding"
+        android:gravity="center"
+        android:text="@string/my_qrCode" />
+
+    <rohin.pers.rohinchat.common.design.widget.DrawableTextView
+        android:id="@+id/dtv_toolbar_add_contacts_search"
+        style="@style/DrawableTextView.Base.Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/social_add_contacts_tv_add_contacts_margin"
+        android:visibility="visible"
+        android:focusableInTouchMode="true"
+        app:drawableHeight="32dp"
+        app:drawablePadding="16dp"
+        app:drawableSrc="@drawable/toolbar_add_contacts_icon_add_contacts_nor"
+        app:drawableWidth="32dp" />
+
+</LinearLayout>

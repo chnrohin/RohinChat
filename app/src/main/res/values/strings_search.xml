@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- ======= -->
+    <!-- Toolbar -->
+    <!-- ======= -->
+    <string name="error_unKnow_contact">未知联系人</string>
+    <string name="title_chat_info">聊天信息</string>
+    <!-- ToolbarActionButtonAndOverFlowPopupMenu -->
+    <string name="action_search">搜索</string>
+    <string name="action_more">更多</string>
+    <string name="action_new_chat">发起群聊</string>
+    <string name="action_add_contacts">添加好友</string>
+    <string name="action_scan_qr_code">扫一扫</string>
+    <string name="action_money">钱包</string>
+    <string name="action_help_feedback">帮助&#038;反馈</string>
+
+    <!-- ==================== -->
+    <!-- AddContacts Activity -->
+    <!-- ==================== -->
+    <string name="hint_add_contacts">帐号/手机号</string>
+    <string name="my_qrCode">我的账号：%1$s&#160;</string>
+    <string name="action_search_contacts">搜索：%1$s</string>
+
+    <!-- =============== -->
+    <!-- Search Activity -->
+    <!-- =============== -->
+    <string name="hint_search">搜索</string>
+    <string name="action_cancel">取消</string>
+</resources>

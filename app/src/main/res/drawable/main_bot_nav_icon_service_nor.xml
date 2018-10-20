@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M838.01,92.71h-648.01c-23,0 -51.46,15.45 -51.46,56.47l-0.19,726.13c0,43.52 20.29,57.51 44.23,57.51 17.85,0.04 34.03,-6.27 43.49,-10.53l234.74,-105.75c4.42,-2 9.74,-3.73 15.32,-5.23v-41.21c-10.06,1.92 -19.43,4.77 -27.66,8.49l-230.7,108.87c-6.47,2.92 -17.81,8.11 -25.52,5.84 -7.72,-2.23 -17.7,-11.34 -17.7,-29.33v-700.8c0,-15.68 11.31,-33.29 26,-33.29h622.89c19.12,0 26.64,16.53 26.64,30.95v707.26c0,22.6 -5.63,22.37 -11.12,24.14 -5.03,1.62 -11.3,-1.96 -15.65,-3.5l-259.03,-110.52c-5.23,-2.35 -10.53,-4.15 -15.78,-5.65v40.71c1.34,0.46 2.84,0.88 4.07,1.42l255.22,112.94c6.21,2.73 17.12,4.42 25.52,4.42 24.5,0 52.95,-17.07 52.95,-63.97v-725.82c-0,-27.25 -26.13,-49.55 -48.28,-49.55zM302.11,419.81l139.29,-22.41 61.01,-130.51 63.79,129.13 139.73,19.26 -99.88,102.22 25.35,142.43 -125.5,-65.97 -124.09,68.77 22.33,-143 -102.02,-99.91zM506.34,635.93l164.27,75.62 -25.55,-181.52 129.59,-137.51 -184.79,-30.75 -88.35,-166.49 -84.5,168.45 -176.67,34.98 125.04,134.43 -21.5,184.6 162.46,-81.8z"
+      android:fillColor="@color/bottomNavigationView_Image_Uncheck_Color"/>
+</vector>

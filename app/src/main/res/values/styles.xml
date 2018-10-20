@@ -1,0 +1,349 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- ====================== -->
+    <!-- Base application theme -->
+    <!-- ====================== -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!-- 溢出菜单样式 -->
+        <item name="actionOverflowButtonStyle">@style/ToolbarOverflowButton</item>
+        <!-- 溢出菜单样式 -->
+        <item name="actionOverflowMenuStyle">@style/ToolbarOverflowMenu</item>
+        <!-- 加载外部字体 -->
+        <item name="android:fontFamily">@font/source_han_sans_cn_normal</item>
+        <!-- 禁用外部字体padding -->
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <!-- ================= -->
+    <!-- APP Default Style -->
+    <!-- ================= -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <!-- ======== -->
+    <!-- Activity -->
+    <!-- ======== -->
+    <style name="Activity.Base" parent="AppTheme.Base">
+        <!--<item name="android:windowTranslucentStatus">false</item>-->
+    </style>
+
+    <style name="Activity.Base.Search" parent="Activity.Base">
+        <!-- 设置顶部状态栏透明，且内容可在状态栏展现 -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- 无ToolBar设置项，相当于marginTop + 顶部状态栏高度 -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!-- ======== -->
+    <!-- Fragment -->
+    <!-- ======== -->
+    <style name="Fragment.Base" parent="AppTheme.Base">
+        <item name="android:background">@color/def_activity_and_fragment_background</item>
+    </style>
+
+    <!-- ==== -->
+    <!-- View -->
+    <!-- ==== -->
+    <style name="View.Base" parent="AppTheme.Base">
+
+    </style>
+
+    <!-- =============== -->
+    <!-- Moments ToolBar -->
+    <!-- =============== -->
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/toolbarTextColor</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="android:windowActionModeOverlay">false</item>
+    </style>
+
+    <!-- ======= -->
+    <!-- ToolBar -->
+    <!-- ======= -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <!--<item name="android:actionOverflowButtonStyle">@style/ToolbarOverflowButton</item>-->
+        <!--<item name="android:actionOverflowMenuStyle">@style/ToolbarOverflowMenu</item>-->
+        <item name="android:actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+        <item name="android:actionMenuTextColor">@color/toolbarPopMenuTextColor</item>
+        <!-- 菜单文字图标颜色 -->
+        <item name="android:textColor">@color/toolbarPopMenuTextColor</item>
+
+        <!-- 设置以下两项将导致溢出菜单无选中动画效果 -->
+        <!-- 溢出菜单背景颜色 @color/toolbarPopupBackground -->
+        <!--<item name="android:itemBackground">@color/toolbarPopupBackground</item>-->
+        <!-- 溢出菜单分割线 -->
+        <!--<item name="android:dropDownListViewStyle">@style/DropDownListView</item>-->
+    </style>
+
+    <style name="DropDownListView" parent="Widget.AppCompat.ListView.Menu">
+        <item name="android:showDividers">middle</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/toolbarTitleColor</item>
+        <item name="android:textSize">@dimen/toolbar_title_text_size</item>
+    </style>
+
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">@dimen/toolbar_menu_text_size</item>
+    </style>
+
+    <style name="ToolbarOverflowButton" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <!-- 溢出菜单图标样式 -->
+        <item name="android:src">@drawable/toolbar_action_menu_icon_more_function_nor</item>
+    </style>
+
+    <style name="ToolbarOverflowMenu" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">@dimen/toolbar_drop_down_vertical_offset</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">@dimen/toolbar_drop_down_horizontal_offset</item>
+    </style>
+
+    <!-- ======== -->
+    <!-- EditText -->
+    <!-- ======== -->
+    <style name="EditText.Base" parent="AppTheme.Base">
+        <item name="android:colorControlNormal">@color/black</item>
+        <item name="android:colorControlActivated">@color/colorLogo</item>
+    </style>
+
+    <style name="EditText.Base.Chat_InputMsg" parent="EditText.Base">
+        <item name="android:colorControlNormal">@color/gray</item>
+        <item name="android:colorControlActivated">@color/colorLogo</item>
+    </style>
+
+    <!-- ============= -->
+    <!-- ClearEditText -->
+    <!-- ============= -->
+    <style name="ClearEditText.Base" parent="AppTheme.Base">
+        <item name="android:colorControlNormal">@color/black</item>
+        <item name="android:colorControlActivated">@color/colorLogo</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHighlight">@color/verySoftGreen</item>
+        <item name="android:textSize">@dimen/def_et_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/common_widget_shape_cet_text_cursor_color_black</item>
+        <item name="android:background">@drawable/common_widget_shape_cet_underline</item>
+    </style>
+
+    <style name="ClearEditText.Base.ToolbarSearch" parent="ClearEditText.Base">
+        <item name="android:colorControlNormal">@color/colorLogo</item>
+        <item name="android:textCursorDrawable">@drawable/common_widget_shape_cet_text_cursor_color_logo</item>
+    </style>
+
+    <!-- ====== -->
+    <!-- Dialog -->
+    <!-- ====== -->
+    <style name="Dialog.Base" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    <style name="AlertDialog.Base" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <!--修改AlertDialog按钮的颜色-->
+        <item name="android:colorButtonNormal">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <!-- ====== -->
+    <!-- Button -->
+    <!-- ====== -->
+    <style name="Button.Base" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/common_shape_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!-- ======== -->
+    <!-- TextView -->
+    <!-- ======== -->
+    <style name="TextView.Base" parent="@style/AppTheme.Base">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/def_tv_text_size</item>
+    </style>
+
+    <style name="TextView.Base.PressSay" parent="TextView.Base">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/common_shape_tv_border_lin_black</item>
+    </style>
+
+    <style name="TextView.Base.Click" parent="TextView.Base">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/common_selector_item_click_bg_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="TextView.Base.SimpleChat" parent="TextView.Base">
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.Base.SimpleChat.Contact" parent="TextView.Base.SimpleChat">
+        <item name="android:textSize">@dimen/main_simple_chat_profile_pic_contact_text_size</item>
+    </style>
+
+    <style name="TextView.Base.SimpleChat.Date" parent="TextView.Base.SimpleChat">
+        <item name="android:gravity">end|top</item>
+        <item name="android:textSize">@dimen/main_simple_chat_profile_pic_date_text_size</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextView.Base.SimpleChat.Message" parent="TextView.Base.SimpleChat">
+        <item name="android:gravity">start|top</item>
+        <item name="android:textSize">@dimen/main_simple_chat_profile_pic_message_text_size</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!-- ====== -->
+    <!-- Layout -->
+    <!-- ====== -->
+    <style name="Layout.Base" parent="AppTheme.Base">
+        <item name="android:background">@color/def_activity_and_fragment_background</item>
+    </style>
+
+    <style name="LinearLayout.Base" parent="Layout.Base">
+
+    </style>
+
+    <style name="LinearLayout.Base.Click" parent="LinearLayout.Base">
+        <item name="android:background">@drawable/common_selector_item_click_bg_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- ========= -->
+    <!-- ImageView -->
+    <!-- ========= -->
+    <style name="ImageView.Base" parent="AppTheme.Base">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- ========================= -->
+    <!-- ContentLoadingProgressBar -->
+    <!-- ========================= -->
+    <style name="ContentLoadingProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:minWidth">45dp</item>
+        <item name="android:maxWidth">45dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:maxHeight">45dp</item>
+        <item name="android:indeterminateDrawable">@drawable/common_widget_shape_progress_bar_circle</item>
+    </style>
+
+    <!-- ======= -->
+    <!-- Design -->
+    <!-- ====== -->
+    <!-- PromptBar -->
+    <style name="AppTheme.Base.PromptBar" parent="AppTheme.Base">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Base.PromptBar.MessageView" parent="AppTheme.Base.PromptBar">
+        <item name="android:paddingStart">@dimen/design_promptBar_padding_vertical</item>
+        <item name="android:paddingEnd">@dimen/design_promptBar_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/design_promptBar_padding_vertical</item>
+        <item name="android:paddingRight">@dimen/design_promptBar_padding_vertical</item>
+        <item name="android:paddingTop">@dimen/design_promptBar_padding_horizontal</item>
+        <item name="android:paddingBottom">@dimen/design_promptBar_padding_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|start|left</item>
+        <item name="android:maxLines">@integer/design_promptBar_text_max_lines</item>
+        <item name="android:textSize">@dimen/design_promptBar_text_size</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTheme.Base.PromptBar.ActionTextView" parent="AppTheme.Base.PromptBar">
+
+    </style>
+
+    <style name="AppTheme.Base.PromptBar.ActionDrawableView" parent="AppTheme.Base.PromptBar">
+
+    </style>
+
+    <!-- ====== -->
+    <!-- Design -->
+    <!-- ====== -->
+    <!-- DrawableTextView -->
+    <style name="DrawableTextView.Base" parent="AppTheme.Base">
+        <item name="android:background">@drawable/common_selector_item_click_bg_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/def_tv_text_size</item>
+    </style>
+
+    <style name="DrawableTextView.Base.Click" parent="DrawableTextView.Base">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:paddingTop">@dimen/view_padding_8</item>
+        <item name="android:paddingBottom">@dimen/view_padding_8</item>
+        <item name="android:paddingStart">@dimen/view_padding_16</item>
+        <item name="android:paddingEnd">@dimen/view_padding_16</item>
+    </style>
+
+    <!-- ==== -->
+    <!-- Main -->
+    <!-- ==== -->
+    <!-- Me Fragment -->
+    <style name="TextView.Base.Click.MainItemClick" parent="TextView.Base.Click">
+        <item name="android:paddingStart">@dimen/user_me_item_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/user_me_item_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/user_me_item_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/user_me_item_padding_vertical</item>
+    </style>
+
+    <!-- ==== -->
+    <!-- Chat -->
+    <!-- ==== -->
+    <!-- ChatInfo Fragment -->
+    <style name="TextView.Base.Click.ChatItemClick" parent="TextView.Base.Click">
+        <item name="android:paddingStart">@dimen/chat_info_item_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/chat_info_item_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/chat_info_item_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/chat_info_item_padding_vertical</item>
+    </style>
+
+</resources>

@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/chat_with_send_msg_bar_diff_img_size"
+    android:height="@dimen/chat_with_send_msg_bar_diff_img_size"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M512,32A480,480 0,1 1,32 512,480 480,0 0,1 512,32m0,-32a512,512 0,1 0,512 512A512,512 0,0 0,512 0z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M309.28,352h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72zM485.28,352h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72zM538.56,416h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.56a10.72,10.72 0,0 0,-10.72 -10.72h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.56zM821.28,352h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72zM309.28,480h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72zM485.28,480h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72zM538.56,544h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.56a10.72,10.72 0,0 0,-10.72 -10.72h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.56zM309.28,608h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72zM821.28,480h-42.56a10.72,10.72 0,0 0,-10.72 10.72L768,608L538.72,608a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h282.56a10.72,10.72 0,0 0,10.72 -10.72L832,490.72a10.72,10.72 0,0 0,-10.72 -10.72zM485.28,608h-106.56a10.72,10.72 0,0 0,-10.72 10.72v42.72a10.72,10.72 0,0 0,10.72 10.72h106.72a10.72,10.72 0,0 0,10.72 -10.72v-42.72a10.72,10.72 0,0 0,-10.88 -10.72z"/>
+</vector>

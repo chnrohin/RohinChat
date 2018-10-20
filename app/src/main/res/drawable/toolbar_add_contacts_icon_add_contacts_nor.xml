@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M1007.68,0L16.32,0A16.32,16.32 0,0 0,0 16.32v990.89a16.32,16.32 0,0 0,16.32 16.32h990.89a16.32,16.32 0,0 0,16.32 -16.32v-990.89A16.32,16.32 0,0 0,1007.68 0zM242.59,803.32A21.8,21.8 0,0 1,220.79 781.06c0,-96.64 115.41,-182.32 254.83,-195.26a184.54,184.54 0,1 1,72.74 0,378.75 378.75,0 0,1 122.75,32.41 116.58,116.58 0,0 0,-32.29 185.12zM781.41,745.03h-36.84L744.57,781.06a21.8,21.8 0,0 1,-43.72 0v-36.49L664.48,744.57a21.8,21.8 0,1 1,0 -43.72h36.84L701.32,664.48a21.8,21.8 0,0 1,43.72 0v36.84L781.06,701.32a21.8,21.8 0,1 1,0 43.72z"
+      android:fillColor="#50CD36"/>
+</vector>

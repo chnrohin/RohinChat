@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/chat_with_send_msg_bar_imm_size"
+    android:height="@dimen/chat_with_send_msg_bar_imm_size"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M658.43,280.06c40.45,0 73.73,32.77 73.73,73.73 0,40.45 -32.77,73.73 -73.73,73.73 -40.45,0 -73.73,-32.77 -73.73,-73.73s32.77,-73.73 73.73,-73.73zM363.01,280.06c40.45,0 73.73,32.77 73.73,73.73 0,40.45 -32.77,73.73 -73.73,73.73 -40.45,0 -73.73,-32.77 -73.73,-73.73 0.51,-40.96 33.28,-73.73 73.73,-73.73zM510.98,788.48c-147.97,0 -268.8,-113.15 -282.11,-257.54h563.71c-12.8,144.38 -134.14,257.54 -281.6,257.54z"
+      android:fillColor="#FF000000"/>
+  <path
+      android:pathData="M510.98,68.61c-245.76,0 -445.44,199.68 -445.44,445.44s199.68,445.44 445.44,445.44 445.44,-199.68 445.44,-445.44c0,-246.27 -199.68,-445.44 -445.44,-445.44zM510.98,933.89c-231.94,0 -419.84,-187.9 -419.84,-419.84s187.9,-419.84 419.84,-419.84 419.84,187.9 419.84,419.84 -187.9,419.84 -419.84,419.84z"
+      android:fillColor="#FF000000"/>
+</vector>

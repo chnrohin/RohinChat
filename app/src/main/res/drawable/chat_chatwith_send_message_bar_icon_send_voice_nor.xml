@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/chat_with_send_msg_bar_diff_img_size"
+    android:height="@dimen/chat_with_send_msg_bar_diff_img_size"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M512,4.61C231.42,4.61 3.58,231.94 3.58,513.02s227.33,508.42 508.42,508.42 508.42,-227.33 508.42,-508.42S792.58,4.61 512,4.61zM512,985.09c-260.61,0 -472.06,-210.94 -472.06,-472.06S250.88,40.96 512,40.96c260.61,0 472.06,210.94 472.06,472.06s-211.46,472.06 -472.06,472.06z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M566.27,218.62l-2.56,2.56c-12.29,14.34 -11.26,34.82 2.05,48.13 62.46,62.98 101.38,150.02 101.38,246.27 0,94.21 -37.38,180.22 -98.82,243.2 -12.8,13.31 -13.82,33.28 -2.05,47.62 13.82,16.38 37.89,17.41 52.74,2.05 74.75,-76.29 120.83,-180.74 120.83,-295.94 0,-115.71 -46.08,-220.16 -121.86,-296.45 -14.34,-13.82 -38.4,-12.8 -51.71,2.56z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M502.78,342.02c-12.29,-16.9 -36.35,-18.94 -51.71,-4.1l-1.02,0.51c-12.8,12.29 -14.34,31.23 -3.58,45.06 28.16,37.38 44.03,84.48 44.03,134.66 0,46.59 -14.34,89.6 -37.89,125.95 -9.73,14.85 -7.17,33.79 6.14,45.06 15.87,13.31 39.42,10.24 50.69,-7.17 31.23,-47.1 50.18,-103.94 50.18,-164.86 0.51,-65.54 -20.48,-125.95 -56.83,-175.1zM299.01,514.56c0,42.5 24.58,77.82 54.78,77.82s54.78,-34.3 54.78,-77.82c0,-42.5 -24.58,-77.82 -54.78,-77.82s-54.78,34.82 -54.78,77.82z"/>
+</vector>

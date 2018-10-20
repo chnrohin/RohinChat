@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M954.48,542.8h-884.28c-19.02,0 -34.45,-15.45 -34.45,-34.48 0,-19.03 15.44,-34.47 34.45,-34.47h884.28c19.01,0 34.45,15.44 34.45,34.47 0,19.03 -15.44,34.48 -34.45,34.48M908.55,340.91c-19.01,0 -34.45,-15.43 -34.45,-34.48v-149.37h-149.3c-19.01,0 -34.45,-15.44 -34.45,-34.47 0,-19.03 15.44,-34.47 34.45,-34.47h183.75c19.01,0 34.45,15.44 34.45,34.47v183.84c0,19.05 -15.44,34.48 -34.45,34.48M299.89,157.06h-149.3v149.37c0,19.05 -15.44,34.48 -34.45,34.48 -19.01,0 -34.45,-15.43 -34.45,-34.48v-183.84c0,-19.03 15.44,-34.47 34.45,-34.47h183.75c19.01,0 34.45,15.44 34.45,34.47 0,19.03 -15.44,34.47 -34.45,34.47M116.13,680.68c19.02,0 34.45,15.45 34.45,34.48v149.37h149.3c19.01,0 34.45,15.44 34.45,34.48 0,19.03 -15.44,34.47 -34.45,34.47h-183.75c-19.01,0 -34.45,-15.44 -34.45,-34.47v-183.85c0,-19.03 15.44,-34.48 34.45,-34.48M724.8,864.53h149.3v-149.37c0,-19.03 15.44,-34.48 34.45,-34.48s34.45,15.45 34.45,34.48v183.85c0,19.03 -15.44,34.47 -34.45,34.47h-183.75c-19.01,0 -34.45,-15.44 -34.45,-34.47 -0,-19.04 15.44,-34.48 34.45,-34.48z"
+      android:fillColor="#ffffff"/>
+</vector>

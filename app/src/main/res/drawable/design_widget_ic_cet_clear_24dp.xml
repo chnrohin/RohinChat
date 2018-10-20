@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M512,460.29L356.86,305.15l-51.71,51.71L460.21,512l-155.06,155.14 51.71,51.71L512,563.79l155.14,155.06 51.71,-51.71L563.79,512l155.06,-155.14 -51.71,-51.71L512,460.21zM512.59,950.86a438.86,438.86 0,1 1,0 -877.71,438.86 438.86,0 0,1 0,877.71z"
+      android:fillColor="#a9a9a9"/>
+</vector>

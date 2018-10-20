@@ -1,0 +1,78 @@
+<!--
+  ~ Copyright © Rohin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Base Default -->
+    <dimen name="text_size">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_padding">8dp</dimen>
+
+    <dimen name="view_margin">16dp</dimen>
+    <dimen name="view_padding_8">8dp</dimen>
+    <dimen name="view_padding_16">16dp</dimen>
+
+    <!-- Loading -->
+    <dimen name="loading_margin">8dp</dimen>
+
+    <!-- Layout -->
+    <dimen name="default_layout_margin">16dp</dimen>
+    <dimen name="default_layout_padding">16dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_title_text_size">18dp</dimen>
+    <dimen name="toolbar_menu_text_size">14dp</dimen>
+    <dimen name="toolbar_drop_down_vertical_offset">15dp</dimen>
+    <dimen name="toolbar_drop_down_horizontal_offset">-5dp</dimen>
+
+    <!-- EditText -->
+    <dimen name="def_et_text_size">16dp</dimen>
+
+    <!-- TextView -->
+    <dimen name="def_tv_text_size">16dp</dimen>
+    <dimen name="def_tv__margin">8dp</dimen>
+    <dimen name="def_tv_padding">8dp</dimen>
+
+    <!-- Button -->
+    <dimen name="def_btn_text_size">16dp</dimen>
+
+    <!-- ///////////////////////// Design ////////////////////////////////////////////////// -->
+    <!-- PromptBar -->
+    <dimen name="design_promptBar_padding_vertical">14dp</dimen>
+    <dimen name="design_promptBar_padding_horizontal">12dp</dimen>
+    <integer name="design_promptBar_text_max_lines">2</integer>
+    <dimen name="design_promptBar_text_size">14dp</dimen>
+    <!-- ///////////////////////// Design ////////////////////////////////////////////////// -->
+
+    <!-- [覆盖/重设] 第三方View -->
+    <!-- -->
+    <!-- BottomNavigationView -->
+    <dimen name="design_bottom_navigation_active_text_size"
+        tools:ignore="PrivateResource">12dp</dimen>
+    <!--<dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_elevation">8dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_height">56dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_item_max_width">96dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_item_min_width">56dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_margin">8dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_shadow_height">1dp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_text_size">12sp</dimen>-->
+
+</resources>
