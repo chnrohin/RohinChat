@@ -24,7 +24,7 @@
     android:padding="@dimen/main_simple_chat_profile_pic_padding">
 
     <ImageView
-        android:id="@+id/iv_main_simple_chat_profile_pic"
+        android:id="@+id/iv_chat_contactsProfilePic"
         android:layout_width="@dimen/main_simple_chat_profile_pic_width"
         android:layout_height="@dimen/main_simple_chat_profile_pic_height"
         android:layout_marginEnd="@dimen/main_simple_chat_profile_pic_vertical_margin"
@@ -45,7 +45,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tv_main_simple_chat_contacts"
+                android:id="@+id/tv_chat_contactsNickname"
                 style="@style/TextView.Base.SimpleChat.Contact"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -53,7 +53,7 @@
                 android:text="@string/loading_network" />
 
             <TextView
-                android:id="@+id/tv_main_simple_chat_timestamp"
+                android:id="@+id/tv_chat_timestamp"
                 style="@style/TextView.Base.SimpleChat.Date"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -63,7 +63,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tv_main_simple_chat_message"
+            android:id="@+id/tv_chat_msgDigest"
             style="@style/TextView.Base.SimpleChat.Message"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

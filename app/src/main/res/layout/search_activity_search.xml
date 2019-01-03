@@ -20,14 +20,14 @@
     android:layout_height="match_parent"
     android:background="@color/search_search_background"
     android:orientation="vertical"
-    tools:context=".search.view.SearchActivity">
+    tools:context=".acts.search.SearchActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/toolbar_search_view_margin_horizontal"
-        android:paddingEnd="@dimen/toolbar_search_view_padding_vertical"
-        android:paddingStart="@dimen/toolbar_search_view_padding_vertical">
+        android:paddingStart="@dimen/toolbar_search_view_padding_vertical"
+        android:paddingEnd="@dimen/toolbar_search_view_padding_vertical">
 
         <ImageView
             android:id="@+id/iv_toolbar_back"
@@ -36,21 +36,19 @@
             android:layout_centerVertical="true"
             android:src="@drawable/toolbar_icon_back_black" />
 
-        <rohin.pers.rohinchat.common.design.widget.ClearEditText
+        <com.github.chnrohin.rohinchat.common.design.widget.ClearEditText
             android:id="@+id/cet_toolbar_action_search_content"
-            style="@style/ClearEditText.Base.ToolbarSearch"
+            style="@style/ClearEditText.Base.Search.Toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/iv_toolbar_back"
             android:layout_toStartOf="@+id/tv_toolbar_back"
-            android:drawableLeft="@drawable/toolbar_add_contacts_cet_drawable_search"
+            android:layout_toEndOf="@+id/iv_toolbar_back"
             android:drawablePadding="@dimen/toolbar_search_view_padding"
             android:hint="@string/hint_search"
-            android:textColorHint="@color/gray"
-            android:imeOptions="actionSearch"
             android:paddingStart="@dimen/toolbar_search_view_padding"
-            android:paddingEnd="@dimen/toolbar_search_view_padding" />
+            android:paddingEnd="@dimen/toolbar_search_view_padding"
+            android:textColorHint="@color/gray" />
 
         <TextView
             android:id="@+id/tv_toolbar_back"

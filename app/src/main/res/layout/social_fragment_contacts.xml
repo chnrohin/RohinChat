@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright © Rohin
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,33 +16,36 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Fragment.Base"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_main_list_contacts"
-        android:name="rohin.pers.rohinchat.contacts.ContactFragment"
+    <com.github.chnrohin.rohinchat.common.design.recyclerview.HeaderRecyclerViewKt
+        android:id="@+id/rv_social_list_contacts"
+        android:name="com.github.chnrohin.rohinchat.contacts.ContactFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        tools:listitem="@layout/social_recycle_contact" />
+        tools:listitem="@layout/social_recycler_contact"
+        app:suwHeaderKt="@layout/social_recycler_suwheader_contacts" />
 
-    <rohin.pers.rohinchat.common.design.widget.SlideSideBar
-        android:id="@+id/ssb_main_sideNavigation"
+    <com.github.chnrohin.rohinchat.common.design.widget.SlideSideBar
+        android:id="@+id/ssb_social_sideNavigation"
         android:layout_width="20dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical|end" />
 
     <TextView
-        android:id="@+id/tv_main_codePrompt"
+        android:id="@+id/tv_social_codePrompt"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_gravity="center"
-        android:gravity="center"
         android:background="@drawable/main_shape_tv_contacts_code_prompt"
-        android:textSize="45dp"
+        android:gravity="center"
         android:textColor="@color/white"
+        android:textSize="45dp"
         android:textStyle="bold"
         android:visibility="invisible" />
 

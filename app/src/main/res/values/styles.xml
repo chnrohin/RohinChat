@@ -47,7 +47,7 @@
     <!-- Activity -->
     <!-- ======== -->
     <style name="Activity.Base" parent="AppTheme.Base">
-        <!--<item name="android:windowTranslucentStatus">false</item>-->
+        <!--<fill name="android:windowTranslucentStatus">false</fill>-->
     </style>
 
     <style name="Activity.Base.Search" parent="Activity.Base">
@@ -88,8 +88,8 @@
     <!-- ToolBar -->
     <!-- ======= -->
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
-        <!--<item name="android:actionOverflowButtonStyle">@style/ToolbarOverflowButton</item>-->
-        <!--<item name="android:actionOverflowMenuStyle">@style/ToolbarOverflowMenu</item>-->
+        <!--<fill name="android:actionOverflowButtonStyle">@style/ToolbarOverflowButton</fill>-->
+        <!--<fill name="android:actionOverflowMenuStyle">@style/ToolbarOverflowMenu</fill>-->
         <item name="android:actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
         <item name="android:actionMenuTextColor">@color/toolbarPopMenuTextColor</item>
         <!-- 菜单文字图标颜色 -->
@@ -97,9 +97,9 @@
 
         <!-- 设置以下两项将导致溢出菜单无选中动画效果 -->
         <!-- 溢出菜单背景颜色 @color/toolbarPopupBackground -->
-        <!--<item name="android:itemBackground">@color/toolbarPopupBackground</item>-->
+        <!--<fill name="android:itemBackground">@color/toolbarPopupBackground</fill>-->
         <!-- 溢出菜单分割线 -->
-        <!--<item name="android:dropDownListViewStyle">@style/DropDownListView</item>-->
+        <!--<fill name="android:dropDownListViewStyle">@style/DropDownListView</fill>-->
     </style>
 
     <style name="DropDownListView" parent="Widget.AppCompat.ListView.Menu">
@@ -157,7 +157,15 @@
         <item name="android:background">@drawable/common_widget_shape_cet_underline</item>
     </style>
 
-    <style name="ClearEditText.Base.ToolbarSearch" parent="ClearEditText.Base">
+    <style name="ClearEditText.Base.Search" parent="ClearEditText.Base">
+        <item name="android:imeActionLabel">@string/action_search</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">24</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="ClearEditText.Base.Search.Toolbar" parent="ClearEditText.Base.Search">
         <item name="android:colorControlNormal">@color/colorLogo</item>
         <item name="android:textCursorDrawable">@drawable/common_widget_shape_cet_text_cursor_color_logo</item>
     </style>
@@ -170,7 +178,7 @@
         <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
         <item name="android:windowIsTranslucent">false</item><!--半透明-->
         <item name="android:windowNoTitle">true</item><!--无标题-->
-        <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明-->
+        <!-- <fill name="android:windowBackground">@color/alpha_bg</fill>背景透明-->
         <item name="android:backgroundDimEnabled">false</item><!--模糊-->
     </style>
 

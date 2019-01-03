@@ -1,4 +1,4 @@
-package rohin.pers.rohinchat
+package com.github.chnrohin.rohinchat
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("rohin.pers.rohinchat", appContext.packageName)
+        assertEquals("com.github.chnrohin.com.github.chnrohin.rohinchat", appContext.packageName)
     }
 }

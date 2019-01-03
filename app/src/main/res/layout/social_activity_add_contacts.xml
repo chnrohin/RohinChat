@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright © Rohin
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,24 +21,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".social.view.AddContactsActivity">
+    tools:context=".acts.social.AddContactsActivity">
 
     <include layout="@layout/include_toolbar" />
 
-    <rohin.pers.rohinchat.common.design.widget.ClearEditText
-        android:id="@+id/cet_toolbar_add_contacts_input"
-        style="@style/ClearEditText.Base"
+    <com.github.chnrohin.rohinchat.common.design.widget.ClearEditText
+        android:id="@+id/cet_toolbar_add_contacts_search"
+        style="@style/ClearEditText.Base.Search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_margin"
         android:background="@color/white"
+        android:drawableStart="@drawable/toolbar_add_contacts_cet_drawable_search"
         android:drawableLeft="@drawable/toolbar_add_contacts_cet_drawable_search"
         android:drawablePadding="@dimen/social_add_contacts_cet_input_drawable_padding"
         android:hint="@string/hint_add_contacts"
-        android:paddingBottom="@dimen/social_add_contacts_cet_input_padding_8"
-        android:paddingEnd="@dimen/social_add_contacts_cet_input_padding_16"
         android:paddingStart="@dimen/social_add_contacts_cet_input_padding_16"
-        android:paddingTop="@dimen/social_add_contacts_cet_input_padding_8" />
+        android:paddingTop="@dimen/social_add_contacts_cet_input_padding_8"
+        android:paddingEnd="@dimen/social_add_contacts_cet_input_padding_16"
+        android:paddingBottom="@dimen/social_add_contacts_cet_input_padding_8" />
 
     <TextView
         android:id="@+id/tv_toolbar_add_contacts_my_qrcode"
@@ -52,14 +52,14 @@
         android:gravity="center"
         android:text="@string/my_qrCode" />
 
-    <rohin.pers.rohinchat.common.design.widget.DrawableTextView
+    <com.github.chnrohin.rohinchat.common.design.widget.DrawableTextView
         android:id="@+id/dtv_toolbar_add_contacts_search"
         style="@style/DrawableTextView.Base.Click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/social_add_contacts_tv_add_contacts_margin"
-        android:visibility="visible"
         android:focusableInTouchMode="true"
+        android:visibility="gone"
         app:drawableHeight="32dp"
         app:drawablePadding="16dp"
         app:drawableSrc="@drawable/toolbar_add_contacts_icon_add_contacts_nor"

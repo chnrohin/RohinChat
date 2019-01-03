@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright © Rohin
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,21 +14,51 @@
   ~ limitations under the License.
   -->
 
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment.Base"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/Fragment.Base">
+    android:orientation="vertical">
 
-    <include layout="@layout/include_progressbar_loading"
+    <include
+        layout="@layout/include_progressbar_loading"
         android:visibility="gone" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC0CB"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="网络连接异常(0xFFC0CB)"
+            android:textColor="#f00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="尝试修复"
+            android:textColor="#0F0" />
+
+    </FrameLayout>
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_main_list_simplechat"
-        android:name="rohin.pers.rohinchat.main.ChatFragment"
+        android:id="@+id/rv_chat_simplechat"
+        android:name="com.github.chnrohin.rohinchat.main.ChatFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/chat_recycle_simplechat" />
 
-</FrameLayout>
+</LinearLayout>

@@ -22,12 +22,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/def_activity_and_fragment_background"
-    tools:context=".chat.view.ChatInfoActivity">
+    tools:context=".acts.chat.ChatInfoActivity">
 
     <include layout="@layout/include_toolbar" />
 
     <ScrollView
-        android:id="@+id/sv_chat_info_contentFrame"
+        android:id="@+id/sv_chat_contentFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

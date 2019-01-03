@@ -15,6 +15,8 @@
  */
 
 apply plugin: rootProject.ext.plugins.application
+apply plugin: rootProject.ext.plugins.kotlin
+apply plugin: rootProject.ext.plugins.kotlinExtensions
 apply plugin: rootProject.ext.plugins.butterknife
 
 android {
@@ -33,7 +35,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -46,6 +48,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -53,12 +56,15 @@ dependencies {
     // constraint-layout
     implementation rootProject.ext.dependencies.constraint_layout
 
+    // kotlin
+    implementation rootProject.ext.dependencies.kotlin
+
     // support
     implementation rootProject.ext.dependencies.appcompat_v7
-    implementation rootProject.ext.dependencies.design
-    implementation rootProject.ext.dependencies.support_vector_drawable
     implementation rootProject.ext.dependencies.support_v4
     implementation rootProject.ext.dependencies.recyclerview_v7
+    implementation rootProject.ext.dependencies.design
+    implementation rootProject.ext.dependencies.support_vector_drawable
 
     // okhttp
     implementation rootProject.ext.dependencies.okhttp
@@ -83,4 +89,8 @@ dependencies {
     implementation rootProject.ext.dependencies.tinypinyin_lexicons_android_cncity
     // Optional, Chinese regional dictionary for Java
     implementation rootProject.ext.dependencies.tinypinyin_lexicons_java_cncity
+}
+
+repositories {
+    mavenCentral()
 }

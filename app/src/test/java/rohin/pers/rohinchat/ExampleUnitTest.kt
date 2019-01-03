@@ -1,4 +1,4 @@
-package rohin.pers.rohinchat
+package com.github.chnrohin.rohinchat
 
 import org.junit.Test
 

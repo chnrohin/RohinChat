@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright © Rohin
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,29 +14,28 @@
   ~ limitations under the License.
   -->
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment.Base"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    style="@style/Fragment.Base">
+    android:layout_height="match_parent">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/srl_chat_loadMoreMsgEx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/ll_chat_divider_01">
+        android:layout_above="@+id/ll_chat_divider01">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_chat_msgEx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/chat_recycle_message" />
+            tools:listitem="@layout/chat_recycle_message_receive" />
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
     <LinearLayout
-        android:id="@+id/ll_chat_divider_01"
+        android:id="@+id/ll_chat_divider01"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_above="@+id/ll_chat_sendMsgBar"
@@ -61,8 +59,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:paddingEnd="@dimen/chat_with_send_msg_bar_padding"
             android:paddingStart="@dimen/chat_with_send_msg_bar_padding"
+            android:paddingEnd="@dimen/chat_with_send_msg_bar_padding"
             android:src="@drawable/chat_chatwith_send_message_bar_icon_send_voice_nor"
             android:visibility="gone" />
         <!--ic_send_keyboard/ic_send_voice-->
@@ -80,13 +78,14 @@
                 android:background="@drawable/chat_chatwith_send_message_bar_shape_et_bg"
                 android:gravity="start"
                 android:inputType="textMultiLine"
+                android:maxLength="160"
                 android:maxLines="4"
                 android:minLines="1"
                 android:padding="6dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/verySoftGreen"
-                android:textSize="@dimen/def_et_text_size"
                 android:textCursorDrawable="@drawable/common_widget_shape_cet_text_cursor_color_black"
+                android:textSize="@dimen/def_et_text_size"
                 android:visibility="visible" />
             <!--tools:ignore="TextFields"-->
 

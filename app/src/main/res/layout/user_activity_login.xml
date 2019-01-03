@@ -22,7 +22,7 @@
     android:layout_margin="10dp"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".user.view.UserActivity">
+    tools:context=".acts.user.UserActivity">
 
     <!-- 顶部 -->
     <LinearLayout
@@ -40,7 +40,7 @@
             android:src="@drawable/user_toolbar_icon_close_nor" />
     </LinearLayout>
 
-    <rohin.pers.rohinchat.common.design.widget.SlideViewPager
+    <com.github.chnrohin.rohinchat.common.design.widget.SlideViewPager
         android:id="@+id/svp_user_login_contentFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
